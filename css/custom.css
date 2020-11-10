@@ -1,0 +1,78 @@
+
+.navbar-padding {
+  padding: 1rem 1rem;
+}
+
+.navbar-background {
+  background-color: #2B2C2A;
+}
+
+.content-background {
+  background-color: #222121;
+}
+
+.footer-background {
+  background-color: #2B2C2A;
+}
+
+
+/* Header Overrides*/
+.header-image {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background: linear-gradient(90deg,rgba(255,255,255,.1) 0,rgba(255,255,255,.1) 100%),url(../img/evacuation-gameplay.png);
+}
+
+/* Body Style */
+@font-face {
+  font-family: JosefinSans;
+  src: url(../fonts/josefin-sans-bold.ttf);
+}
+
+@font-face {
+  font-family: FuturaBook;
+  src: url(../fonts/Futura-Book.ttf);
+}
+
+.body-general-text {
+  color: #EFEFEF;
+  font-family: JosefinSans;
+}
+
+.body-text {
+  font-family: FuturaBook;
+  font-size: 1rem;
+}
+
+.header-block {
+
+}
+
+.header {
+  padding-top: 2rem;
+  padding-bottom:  2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.header::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 50%;
+  height: 4px;
+  bottom: 0; /*positions relative to the bottom*/
+  left: 25%;
+  /*border-bottom: 4px;*/
+  background-color: white;
+}
+
+.content-padding {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.paragraph-padding {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
