@@ -55,16 +55,16 @@
   margin-bottom: 2rem;
 }
 
-.header::after {
+.line::after {
   content: "";
   display: block;
-  position: absolute;
+  position: relative;
   width: 50%;
   height: 4px;
-  bottom: 0; /*positions relative to the bottom*/
+  bottom: -2rem; /*positions relative to the bottom*/
   left: 25%;
-  /*border-bottom: 4px;*/
   background-color: white;
+  z-index: 999;
 }
 
 .content-padding {
@@ -75,4 +75,31 @@
 .paragraph-padding {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+/*About section*/
+.about-padding {
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+}
+
+.about-image {
+  object-fit: cover;
+  width: 350px;
+  height: 500px;
+}
+
+/*Portfolio block*/
+.portfolio-block {
+  height: 300px;
+}
+
+.portfolio-image {
+  object-fit: cover;
+  height: inherit;
+  width: 100%;
+}
+
+.portfolio-padding {
+  padding-bottom: 2rem;
 }
