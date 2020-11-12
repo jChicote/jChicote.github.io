@@ -89,6 +89,51 @@
   height: 500px;
 }
 
+.about-image-background {
+  background-color: #5E9CDF;
+
+}
+
+.skill-background {
+  background-color: #2E2E2E;
+}
+
+.skill-bar {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+.skill-bar-progress {
+  width: 0;
+  animation: skill-animate 3s ease-in-out forwards;
+}
+
+.polygon-animate {
+  clip-path: polygon(20% 10%, 80% 10%, 100% 60%, 10% 80%);
+  animation: polygons 6s alternate infinite;
+}
+
+@keyframes skill-animate {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes polygons {
+  30% {
+    clip-path: polygon(20% 15%, 100% 38%, 70% 60%. 30% 80%);
+  }
+  55% {
+    clip-path: polygon(10% 46%, 60% 5%, 90% 64%, 40% 80%);
+  }
+  80% {
+    clip-path: polygon(50% 10%, 90% 30%, 55% 75%, 10% 40%);
+  }
+}
+
 /*Portfolio block*/
 .portfolio-block {
   height: 300px;
