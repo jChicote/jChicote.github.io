@@ -34,14 +34,23 @@
   src: url(../fonts/Futura-Book.ttf);
 }
 
+@font-face {
+  font-family: CircularStd;
+  src: url(../fonts/CircularStd-Medium.otf);
+}
+
 .body-general-text {
   color: #EFEFEF;
-  font-family: JosefinSans;
+  font-family: CircularStd;
 }
 
 .body-text {
   font-family: FuturaBook;
   font-size: 1rem;
+}
+
+.heading {
+  font-family: FuturaBook;
 }
 
 .header-block {
@@ -68,8 +77,8 @@
 }
 
 .content-padding {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
 }
 
 .paragraph-padding {
@@ -79,8 +88,8 @@
 
 /*About section*/
 .about-padding {
-  padding-top: 5rem;
-  padding-bottom: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 2.5rem;
 }
 
 .about-image {
@@ -95,7 +104,7 @@
 }
 
 .skill-background {
-  background-color: #2E2E2E;
+  background-color: #2B2C2A;
 }
 
 .skill-bar {
@@ -106,6 +115,17 @@
 .skill-bar-progress {
   width: 0;
   animation: skill-animate 3s ease-in-out forwards;
+}
+
+.progress-padding {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.button-align {
+  text-align: right;
 }
 
 .polygon-animate {
