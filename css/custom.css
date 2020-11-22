@@ -94,8 +94,11 @@
 
 .about-image {
   object-fit: cover;
-  width: 350px;
-  height: 500px;
+  display: block;
+  text-align: center !important;
+  margin: auto;
+  width:200px;
+  height: 200px;
 }
 
 .about-image-background {
