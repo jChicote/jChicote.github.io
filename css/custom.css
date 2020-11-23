@@ -131,6 +131,11 @@
   text-align: right;
 }
 
+.button-image {
+  height: 90%;
+  width: auto;
+}
+
 .polygon-animate {
   clip-path: polygon(20% 10%, 80% 10%, 100% 60%, 10% 80%);
   animation: polygons 6s alternate infinite;
