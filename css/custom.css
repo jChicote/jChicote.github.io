@@ -54,7 +54,7 @@
 }
 
 .header-block {
-
+  min-height: 30rem;
 }
 
 .header {
@@ -62,6 +62,10 @@
   padding-bottom:  2rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.sub-head-image {
+
 }
 
 .line::after {
@@ -175,4 +179,19 @@
 
 .portfolio-padding {
   padding-bottom: 2rem;
+}
+
+.portfolio-card-col {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.portfolio-card {
+  background-color: #4C5D63;
+  border: 0px;
+}
+
+.card-image {
+  object-fit: cover;
+  height: 200px;
 }
