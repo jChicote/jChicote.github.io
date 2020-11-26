@@ -191,7 +191,34 @@
   border: 0px;
 }
 
+.portfolio-body {
+  height: 13.5rem;
+}
+
+.portfolio-card-text {
+  height: 5.3rem;
+  overflow: hidden;
+  font-size: 0.9rem;
+}
+
 .card-image {
   object-fit: cover;
   height: 200px;
+}
+
+/* Page transition */
+
+body {
+    animation: fadeInAnimation ease 3s
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
 }

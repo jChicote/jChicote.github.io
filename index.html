@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="background-color: #222121;">
 
 <head>
 
@@ -24,9 +24,31 @@
   <!-- Custom CSS overrides  -->
   <link href="css/custom.css" rel="stylesheet" type="text/css">
 
+  <!-- Include JQuery -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+
+  <!-- Transition scripts for the page -->
+  <script type="text/javascript" src="js/site-transitions.js"></script>
+
+  <style>
+        body {
+          animation: fadeInAnimation ease 3s;
+          animation-iteration-count: 1;
+          animation-fill-mode: forwards;
+        }
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
 
 <body id="page-top" class="body-general-text">
+
 	<!-- Navigation-->
   <nav class="navbar navbar-expand-lg text-uppercase fixed-top navbar-padding navbar-background" id="mainNav">
       <div class="container">
@@ -53,7 +75,7 @@
       <h3 class="mb-5 heading">
         <em>Game Developer Specialising in Unity</em>
       </h3>
-      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Recent Projects</a>
+      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#portfolio">Recent Projects</a>
     </div>
     <div class="overlay"></div>
   </header>
@@ -180,6 +202,13 @@
             <h6 style="text-align: left;"> Photoshop </h6>
             <div class="progress" style="height: 20px;">
               <div class="progress-bar skill-bar-progress" role="progressbar" style="max-width: 99%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">99%</div>
+            </div>
+          </div>
+          <h2 class="heading" style="text-align: left; padding-top: 2rem;"> Version Control </h2>
+          <div class="skill-bar">
+            <h6 style="text-align: left;"> Github </h6>
+            <div class="progress" style="height: 20px;">
+              <div class="progress-bar skill-bar-progress" role="progressbar" style="max-width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">90%</div>
             </div>
           </div>
         </div>
