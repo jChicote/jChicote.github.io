@@ -29,9 +29,25 @@
   <!-- Transition scripts for the page -->
   <script type="text/javascript" src="../js/site-transitions.js"></script>
 
+  <style>
+        .fader {
+          animation: fadeInAnimation ease 3s;
+          animation-iteration-count: 1;
+          animation-fill-mode: forwards;
+        }
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+
 </head>
 
-<body id="page-top" class="body-general-text">
+<body id="page-top" class="body-general-text" style="background-color: #222121;">
 	<!-- Navigation-->
   <nav class="navbar navbar-expand-lg text-uppercase fixed-top navbar-padding navbar-background" id="mainNav">
       <div class="container">
@@ -52,7 +68,7 @@
   </nav>
 
   <!-- Header -->
-  <header class="header-block d-flex header-image" style="background-image: url(../img/chat-bee-screen-cover.png); background-size: cover;">
+  <header class="header-block d-flex header-image fader" style="background-image: url(../img/chat-bee-screen-cover.png); background-size: cover;">
     <div class="container text-center my-auto">
       <h1 class="mb-1 heading" style="font-size: 5rem;">Mobile Development</h1>
       <h3 class="mb-5 heading">
@@ -63,7 +79,7 @@
   </header>
 
   <!-- IOS Projects -->
-  <section class="content-section content-background content-padding skill-background" style="background-color: #222121;" id="about">
+  <section class="content-section content-background content-padding skill-background fader" style="background-color: #222121;" id="about">
     <div class="container">
       <div class="content-section-heading text-center portfolio-padding">
         <h2 class="header line heading" style="padding-top: 0; padding-bottom: 0.25rem;">IOS PROJECTS</h2>
@@ -101,32 +117,32 @@
     <div class="container">
       <ul class="list-inline mb-5">
         <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white mr-3" href="#!">
-            <i class="icon-social-facebook"></i>
+          <a class="social-link rounded-circle text-white mr-3" href="https://www.instagram.com/mr_dev_n_play/">
+            <i class="fab fa-instagram"></i>
           </a>
         </li>
         <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white mr-3" href="#!">
+          <a class="social-link rounded-circle text-white mr-3" href="https://twitter.com/ChicoteJaiden">
             <i class="icon-social-twitter"></i>
           </a>
         </li>
         <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white" href="#!">
+          <a class="social-link rounded-circle text-white mr-3" href="https://github.com/jChicote">
             <i class="icon-social-github"></i>
           </a>
         </li>
         <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white" href="#!">
-            <i class="icon-social-github"></i>
+          <a class="social-link rounded-circle text-white mr-3" href="https://jaidenchicote.itch.io/">
+            <i class="fab fa-itch-io"></i>
           </a>
         </li>
         <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white" href="#!">
-            <i class="icon-social-github"></i>
+          <a class="social-link rounded-circle text-white" href="https://www.linkedin.com/in/jaidenchicote/">
+            <i class="fab fa-linkedin"></i>
           </a>
         </li>
       </ul>
-      <p class="text-muted small mb-0">Copyright &copy; Your Website 2020</p>
+      <p class="text-muted small mb-0">Copyright &copy; Jaiden Chicote 2020</p>
     </div>
   </footer>
 

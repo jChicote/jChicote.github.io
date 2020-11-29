@@ -131,13 +131,19 @@
   padding-bottom: 2rem;
 }
 
-.button-align {
-  text-align: right;
+.button-container {
+  text-align: center;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
-.button-image {
-  height: 90%;
-  width: auto;
+.button-align {
+  text-align: left;
+}
+
+.button-style {
+  width: 100%;
+  border: 0;
 }
 
 .polygon-animate {

@@ -31,7 +31,7 @@
   <script type="text/javascript" src="js/site-transitions.js"></script>
 
   <style>
-        body {
+        .fader {
           animation: fadeInAnimation ease 3s;
           animation-iteration-count: 1;
           animation-fill-mode: forwards;
@@ -47,7 +47,7 @@
     </style>
 </head>
 
-<body id="page-top" class="body-general-text">
+<body id="page-top" class="body-general-text"  style="background-color: #222121;">
 
 	<!-- Navigation-->
   <nav class="navbar navbar-expand-lg text-uppercase fixed-top navbar-padding navbar-background" id="mainNav">
@@ -69,7 +69,7 @@
   </nav>
 
   <!-- Header -->
-  <header class="masthead d-flex header-image">
+  <header class="masthead d-flex header-image fader">
     <div class="container text-center my-auto">
       <h1 class="mb-1 heading">Jaiden Chicote</h1>
       <h3 class="mb-5 heading">
@@ -81,7 +81,7 @@
   </header>
 
   <!-- About -->
-  <section class="content-section content-background content-padding" id="about">
+  <section class="content-section content-background content-padding fader" id="about">
     <div class="container text-center">
       <div class="row">
         <img class="about-image" src="img/Portfolio_Image.png" alt="Photo of Jaiden Chicote">
@@ -91,37 +91,45 @@
           <h2 class="header line heading" style="padding-top: 0;">ABOUT ME</h2>
         </div>
         <div class="col-sm-4 about-padding">
-          <p class="body-general-text">  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Duis vitae arcu pellentesque, tempor quam non, imperdiet eros.
-            Nulla arcu risus, rhoncus in suscipit gravida, consectetur ac lectus.
-            Etiam semper volutpat massa, a pretium est scelerisque vitae.
-            Nunc sagittis elementum sapien ac venenatis. Mauris non ipsum a ante
-            malesuada lacinia id eget tortor. Cras id sollicitudin ex. Donec semper
-            euismod felis, vitae tempus dui commodo sed. Phasellus tristique viverra
-            ullamcorper. Aliquam ultricies est scelerisque ante placerat vulputate
-            auctor nec velit. Fusce sit amet nunc quis enim placerat facilisis vitae
-            id sapien. Cras ac libero id elit consectetur cursus.  </p>
+          <p class="body-general-text">  Welcome to my space on the web. I'm Jaiden Chicote
+            and I'm a programmer and game developer situated in Sydney Australia.
+            I am a recent graduate from the University of Technology Sydney and I spend a lot
+            of time developing and tinkering games and learning new principles and techniques
+            in software development. I am also competant in illustrations, creating concepts and
+            honing illustration techniques for conveying visual ideas or concepts (
+            <a href="https://www.artstation.com/mr_introvert">Artstation Link</a>
+            ). Being creative in these field taught me to approach each developer problem
+            as a new learning experience to experiment and design creative solutions.</p>
         </div>
         <div class="col-sm-4 about-padding">
-          <p class="body-general-text"> Etiam imperdiet arcu ut euismod bibendum.
-            Donec sodales, leo vitae volutpat sollicitudin, metus nibh ultricies
-            velit, in ultrices purus orci non ipsum. Suspendisse ac elit metus.
-            Cras porta rutrum lorem at ullamcorper. Nam semper nulla et lacinia
-            dignissim. Integer sed sodales leo. Nullam pretium sollicitudin scelerisque.
-            Morbi non facilisis turpis. Ut mollis eros ut neque scelerisque condimentum.
-            Mauris mollis scelerisque facilisis. Fusce id erat erat. Nullam ut urna dolor. </p>
+          <p class="body-general-text"> This web portfolilo contains the relevant past works
+            that I've completed that has utilised the development skills that I've learnt over
+            the duration of my games development course. Majority fo the projects I've worked on
+            involved the Unity game engine and languages of C#. However other projects are incluuded
+            as newly build assignment projects in Unreal Engine and iOS applications developed through
+            xCode programmed with Swift and some JSON.</p>
         </div>
         <div class="col-sm-4 about-padding">
-          <button type="button" class="btn btn-primary btn-lg btn-block button-align">Resume</button>
-          <button type="button" class="btn btn-primary btn-lg btn-block button-align">Itch.io</button>
-          <button type="button" class="btn btn-primary btn-lg btn-block button-align">Github</button>
+          <div class="button-container">
+            <a href="files/Recent-Graduate-Resume-test.pdf" target="_blank">
+              <button type="button" class="btn btn-primary btn-lg btn-block button-align button-style" style="margin-bottom: .5rem;">
+              <i class="fas fa-download" style="padding-right: 1rem;"></i>Resume
+              </button>
+            </a>
+            <button type="button" class="btn btn-primary btn-lg btn-block button-align button-style" style="background-color: #D05252!important;" onclick="window.location.href='https://jaidenchicote.itch.io';">
+              <i class="fab fa-itch-io" style="padding-right: 1rem;"></i>Itch.io
+            </button>
+            <button type="button" class="btn btn-primary btn-lg btn-block button-align button-style" style="background-color: #8CC46F!important;" onclick="window.location.href='https://github.com/jChicote';">
+              <i class="fab fa-github" style="padding-right: 1rem;">
+              </i>Github
+            </button>
+          </div>
         </div>
       </div>
-
   </section>
 
 
-  <section class="content-section content-background content-padding skill-background" id="about">
+  <section class="content-section content-background content-padding skill-background fader" id="about">
     <div class="container text-center">
       <div class="row">
         <div class="col-lg-10 mx-auto">
@@ -218,7 +226,7 @@
 
 
   <!-- Portfolio -->
-  <section class="content-section content-background content-padding" id="portfolio">
+  <section class="content-section content-background content-padding fader" id="portfolio">
     <div class="container">
       <div class="content-section-heading text-center portfolio-padding">
         <h3 class="text-secondary mb-0 heading">Portfolio</h3>
@@ -230,7 +238,7 @@
             <div class="caption">
               <div class="caption-content">
                 <div class="h2">That One Samurai Game</div>
-                <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
+                <p class="mb-0">A game of samurai action and battles!</p>
               </div>
             </div>
             <img class="recent_img portfolio-image" src="img/tosg-cover.jpg" alt="">
@@ -241,7 +249,7 @@
             <div class="caption">
               <div class="caption-content">
                 <div class="h2">Crystal Mech</div>
-                <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
+                <p class="mb-0">Fight through the endless enemies through the winding caves!</p>
               </div>
             </div>
             <img class="recent_img portfolio-image" src="img/crystal-mech-cover.jpg" alt="">
@@ -251,11 +259,11 @@
           <a class="portfolio-item portfolio-block" href="#!">
             <div class="caption">
               <div class="caption-content">
-                <div class="h2">Evacuation</div>
-                <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
+                <div class="h2">Wormhole</div>
+                <p class="mb-0">Simulating wormholes like in Interstellar.</p>
               </div>
             </div>
-            <img class="recent_img portfolio-image" src="img/evacuation-gameplay.png" alt="">
+            <img class="recent_img portfolio-image" src="img/wormhole-cover.png" alt="">
           </a>
         </div>
         <div class="col-lg-6">
@@ -263,7 +271,7 @@
             <div class="caption">
               <div class="caption-content">
                 <div class="h2">Universe Collide</div>
-                <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
+                <p class="mb-0">Battle against your opponents with ships from other franchises.</p>
               </div>
             </div>
             <img class="recent_img portfolio-image" src="img/universal-collide.jpg" alt="">
@@ -300,32 +308,32 @@
     <div class="container">
       <ul class="list-inline mb-5">
         <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white mr-3" href="#!">
-            <i class="icon-social-facebook"></i>
+          <a class="social-link rounded-circle text-white mr-3" href="https://www.instagram.com/mr_dev_n_play/">
+            <i class="fab fa-instagram"></i>
           </a>
         </li>
         <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white mr-3" href="#!">
+          <a class="social-link rounded-circle text-white mr-3" href="https://twitter.com/ChicoteJaiden">
             <i class="icon-social-twitter"></i>
           </a>
         </li>
         <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white" href="#!">
+          <a class="social-link rounded-circle text-white mr-3" href="https://github.com/jChicote">
             <i class="icon-social-github"></i>
           </a>
         </li>
         <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white" href="#!">
-            <i class="icon-social-github"></i>
+          <a class="social-link rounded-circle text-white mr-3" href="https://jaidenchicote.itch.io/">
+            <i class="fab fa-itch-io"></i>
           </a>
         </li>
         <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white" href="#!">
-            <i class="icon-social-github"></i>
+          <a class="social-link rounded-circle text-white" href="https://www.linkedin.com/in/jaidenchicote/">
+            <i class="fab fa-linkedin"></i>
           </a>
         </li>
       </ul>
-      <p class="text-muted small mb-0">Copyright &copy; Your Website 2020</p>
+      <p class="text-muted small mb-0">Copyright &copy; Jaiden Chicote 2020</p>
     </div>
   </footer>
 
