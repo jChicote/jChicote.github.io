@@ -212,6 +212,25 @@
   height: 200px;
 }
 
+/* Protfolio Page */
+
+.project-header {
+  padding-top: 7vh;
+}
+
+.btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    border-radius: 35px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.btn-hor-spacing {
+  padding-right: 3vh;
+}
+
 /* Page transition */
 
 body {
