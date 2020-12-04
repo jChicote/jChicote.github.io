@@ -39,14 +39,23 @@
   src: url(../fonts/CircularStd-Medium.otf);
 }
 
+@font-face {
+  font-family: CircularStd-Book;
+  src: url(../fonts/CircularStd-Book.ttf);
+}
+
 .body-general-text {
   color: #EFEFEF;
-  font-family: CircularStd;
+  font-family: CircularStd-Book;
 }
 
 .body-text {
   font-family: FuturaBook;
   font-size: 1rem;
+}
+
+h3 {
+  padding-bottom: 2vh;
 }
 
 .heading {
@@ -131,19 +140,21 @@
   padding-bottom: 2rem;
 }
 
-.button-container {
-  text-align: center;
-  padding-left: 15%;
-  padding-right: 15%;
-}
-
 .button-align {
   text-align: left;
 }
 
 .button-style {
-  width: 100%;
+  width: 30vh;
   border: 0;
+}
+
+@media only screen and (max-width: 750px){
+  .button-container {
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
 }
 
 .polygon-animate {
@@ -190,10 +201,14 @@
 .portfolio-card-col {
   padding-top: 1rem;
   padding-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 .portfolio-card {
   background-color: #4C5D63;
+  min-width: 30vh;
   border: 0px;
 }
 
@@ -212,10 +227,17 @@
   height: 200px;
 }
 
-/* Protfolio Page */
+/* Protfolio Project Page */
 
 .project-header {
   padding-top: 7vh;
+}
+
+.carosel-image {
+  object-fit: cover;
+  height: 70vh;
+  width: 100%;
+  overflow: hidden;
 }
 
 .btn-circle.btn-xl {
@@ -231,12 +253,50 @@
   padding-right: 3vh;
 }
 
+.header-badge {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 16px;
+}
+
+.image-fit {
+  width: 90%;
+  height: 100%;
+  display:flex;
+  object-fit: cover;
+  position: absolute;
+  overflow: hidden;
+}
+
+.row-padding {
+  padding-top: 2vh;
+  padding-bottom: 4vh;
+}
+
+.button-col-alignment {
+  float: left;
+}
+
+@media only screen and (max-width: 1200px){
+  .carosel-image {
+    height: 50vh;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .carosel-image {
+    height: 25vh;
+  }
+}
+
 /* Page transition */
 
-body {
-    animation: fadeInAnimation ease 3s
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+.fader {
+  animation: fadeInAnimation ease 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 @keyframes fadeInAnimation {
@@ -245,5 +305,5 @@ body {
     }
     100% {
         opacity: 1;
-     }
+    }
 }
