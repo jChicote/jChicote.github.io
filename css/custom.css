@@ -20,7 +20,8 @@
 .header-image {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background: linear-gradient(90deg,rgba(255,255,255,.1) 0,rgba(255,255,255,.1) 100%),url(../img/evacuation-gameplay.png);
+  width:100%;
+  background: linear-gradient(90deg,rgba(255,255,255,.1) 0,rgba(255,255,255,.1) 100%),url(../img/header-room-shot.jpg);
 }
 
 /* Body Style */
@@ -89,6 +90,12 @@ h3 {
   z-index: 999;
 }
 
+.arrow-down {
+  display: none;
+  bottom: 0;
+  text-align: center;
+}
+
 .content-padding {
   padding-top: 2rem;
   padding-bottom: 3rem;
@@ -142,6 +149,11 @@ h3 {
 
 .button-align {
   text-align: left;
+}
+
+.center-button {
+  display: relative !important;
+  text-align: center;
 }
 
 .button-style {
