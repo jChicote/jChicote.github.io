@@ -1,27 +1,346 @@
 <!DOCTYPE html>
-	<html>
-		<head>
-			<title><b> Hello This Is My New Portfolio </b></title>
-			<!-- link to main stylesheet -->
-			<!--<link rel="stylesheet" type="text/css" href="/css/main.css"> -->
-		</head>
-		<body>
-      <h1> Hello This Is My New Portfolio </h1>
-			<nav>
-	    		<ul>
-	        		<!-- <li><a href="/">Home</a></li>
-		        	<li><a href="/about">About</a></li>
-	        		<li><a href="/cv">CV</a></li>
-	        		<li><a href="/blog">Blog</a></li> -->
-	    		</ul>
-			</nav>
+<html lang="en" style="background-color: #222121;">
 
-			<!--
-			<footer>
-	    		<ul>
-	        		<li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
-	        		<li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
-				</ul>
-			</footer> -->
-		</body>
-	</html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Jaiden Chicote</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+  <!-- Stylish CSS template -->
+  <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+
+  <!-- Custom CSS overrides  -->
+  <link href="css/custom.css" rel="stylesheet" type="text/css">
+
+  <!-- Include JQuery -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+
+  <!-- Transition scripts for the page -->
+  <script type="text/javascript" src="js/site-transitions.js"></script>
+
+</head>
+
+<body id="page-top" class="body-general-text"  style="background-color: #222121;">
+
+	<!-- Navigation-->
+  <nav class="navbar navbar-expand-lg text-uppercase fixed-top navbar-padding navbar-background" id="mainNav">
+      <div class="container">
+          <a class="navbar-brand js-scroll-trigger" href="#page-top">Jaiden Chicote</a>
+          <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              Menu
+              <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto">
+									<li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#home">Home</a></li>
+                  <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="pages/game-portfolio.html">Game Dev</a></li>
+                  <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="pages/mobile-portfolio.html">Mobile Dev</a></li>
+                  <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="pages/contact.html">Contact</a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead d-flex header-image fader">
+    <div class="container text-center my-auto">
+      <h1 class="mb-1 heading">Jaiden Chicote</h1>
+      <h3 class="mb-5 heading">
+        <em>Game Developer Specialising in Unity</em>
+      </h3>
+      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#portfolio">Recent Projects</a>
+    </div>
+    <dic class="arrow-down">
+      <i class="fas fa-angle-up"></i>
+    </div>
+    <div class="overlay"></div>
+
+  </header>
+
+  <!-- About -->
+  <section class="content-section content-background content-padding fader" id="about">
+    <div class="container text-center">
+      <div class="row">
+        <img class="about-image" src="img/Portfolio_Image.png" alt="Photo of Jaiden Chicote">
+      </div>
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h2 class="header line heading" style="padding-top: 0;">ABOUT ME</h2>
+        </div>
+        <div class="col-sm-4 about-padding">
+          <p class="body-general-text">  Welcome to my space on the web. I'm Jaiden Chicote
+            and I'm a programmer and game developer situated in Sydney Australia.
+            I am a recent graduate from the University of Technology Sydney and I spend a lot
+            of time developing and tinkering games and learning new principles and techniques
+            in software development. I am also competant in illustrations, creating concepts and
+            honing illustration techniques for conveying visual ideas or concepts (
+            <a href="https://www.artstation.com/mr_introvert">Artstation Link</a>
+            ). Being creative in these field taught me to approach each developer problem
+            as a new learning experience to experiment and design creative solutions.</p>
+        </div>
+        <div class="col-sm-4 about-padding">
+          <p class="body-general-text"> This web portfolilo contains the relevant past works
+            that I've completed that has utilised the development skills that I've learnt over
+            the duration of my games development course. Majority fo the projects I've worked on
+            involved the Unity game engine and languages of C#. However other projects are incluuded
+            as newly build assignment projects in Unreal Engine and iOS applications developed through
+            xCode programmed with Swift and some JSON.</p>
+        </div>
+        <div class="col-sm-4 about-padding">
+          <div class="button-container">
+            <a href="files/Recent-Graduate-Resume-test.pdf" target="_blank">
+              <button type="button" class="btn btn-primary btn-lg btn-block button-align button-style" style="margin-bottom: .5rem;">
+              <i class="fas fa-download" style="padding-right: 1rem;"></i>Resume
+              </button>
+            </a>
+            <button type="button" class="btn btn-primary btn-lg btn-block button-align button-style" style="background-color: #D05252!important;" onclick="window.location.href='https://jaidenchicote.itch.io';">
+              <i class="fab fa-itch-io" style="padding-right: 1rem;"></i>Itch.io
+            </button>
+            <button type="button" class="btn btn-primary btn-lg btn-block button-align button-style" style="background-color: #8CC46F!important;" onclick="window.location.href='https://github.com/jChicote';">
+              <i class="fab fa-github" style="padding-right: 1rem;">
+              </i>Github
+            </button>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+  <section class="content-section content-background content-padding skill-background fader" id="about">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h2 class="header line heading" style="padding-top: 0; padding-bottom: 0;">Code and Software Skills</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col progress-padding" data-animation="slide-in-right">
+          <h2 class="heading" style="text-align: left;"> Languages </h2>
+          <div class="skill-bar">
+            <h6 style="text-align: left;"> C# </h6>
+            <div class="progress" style="height: 20px;">
+              <div class="progress-bar skill-bar-progress" role="progressbar" style="max-width: 95%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">95%</div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <h6 style="text-align: left;"> C++ </h6>
+            <div class="progress" style="height: 20px;">
+              <div class="progress-bar skill-bar-progress" role="progressbar" style="max-width: 65%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">65%</div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <h6 style="text-align: left;"> HLSL </h6>
+            <div class="progress" style="height: 20px;">
+              <div class="progress-bar skill-bar-progress" role="progressbar" style="max-width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">70%</div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <h6 style="text-align: left;"> Swift </h6>
+            <div class="progress" style="height: 20px;">
+              <div class="progress-bar skill-bar-progress" role="progressbar" style="max-width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">80%</div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <h6 style="text-align: left;"> Python </h6>
+            <div class="progress" style="height: 20px;">
+              <div class="progress-bar skill-bar-progress" role="progressbar" style="max-width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">90%</div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <h6 style="text-align: left;"> Java </h6>
+            <div class="progress" style="height: 20px;">
+              <div class="progress-bar skill-bar-progress" role="progressbar" style="max-width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">60%</div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <h6 style="text-align: left;"> Javascript </h6>
+            <div class="progress" style="height: 20px;">
+              <div class="progress-bar skill-bar-progress" role="progressbar" style="max-width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">50%</div>
+            </div>
+          </div>
+          <h2 class="heading" style="text-align: left; padding-top: 2rem;"> Software </h2>
+          <div class="skill-bar">
+            <h6 style="text-align: left;"> Unity </h6>
+            <div class="progress" style="height: 20px;">
+              <div class="progress-bar skill-bar-progress" role="progressbar" style="max-width: 99%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">99%</div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <h6 style="text-align: left;"> Unreal Engine 4 </h6>
+            <div class="progress" style="height: 20px;">
+              <div class="progress-bar skill-bar-progress" role="progressbar" style="max-width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">80%</div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <h6 style="text-align: left;"> Blender </h6>
+            <div class="progress" style="height: 20px;">
+              <div class="progress-bar skill-bar-progress" role="progressbar" style="max-width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">90%</div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <h6 style="text-align: left;"> XCode </h6>
+            <div class="progress" style="height: 20px;">
+              <div class="progress-bar skill-bar-progress" role="progressbar" style="max-width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">90%</div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <h6 style="text-align: left;"> Photoshop </h6>
+            <div class="progress" style="height: 20px;">
+              <div class="progress-bar skill-bar-progress" role="progressbar" style="max-width: 99%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">99%</div>
+            </div>
+          </div>
+          <h2 class="heading" style="text-align: left; padding-top: 2rem;"> Version Control </h2>
+          <div class="skill-bar">
+            <h6 style="text-align: left;"> Github </h6>
+            <div class="progress" style="height: 20px;">
+              <div class="progress-bar skill-bar-progress" role="progressbar" style="max-width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">90%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Portfolio -->
+  <section class="content-section content-background content-padding fader" id="portfolio">
+    <div class="container">
+      <div class="content-section-heading text-center portfolio-padding">
+        <h3 class="text-secondary mb-0 heading">Portfolio</h3>
+        <h2 class="mb-5 line heading">RECENT PROJECTS</h2>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-6">
+          <a class="portfolio-item portfolio-block" href="pages/that-one-samurai-game.html">
+            <div class="caption">
+              <div class="caption-content">
+                <div class="h2">That One Samurai Game</div>
+                <p class="mb-0">A game of samurai action and battles!</p>
+              </div>
+            </div>
+            <img class="recent_img portfolio-image" src="img/tosg-cover.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item portfolio-block" href="pages/crystal-mech.html">
+            <div class="caption">
+              <div class="caption-content">
+                <div class="h2">Crystal Mech</div>
+                <p class="mb-0">Fight through the endless enemies through the winding caves!</p>
+              </div>
+            </div>
+            <img class="recent_img portfolio-image" src="img/crystal-mech-cover.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item portfolio-block" href="pages/wormhole.html">
+            <div class="caption">
+              <div class="caption-content">
+                <div class="h2">Wormhole</div>
+                <p class="mb-0">Simulating wormholes like in Interstellar.</p>
+              </div>
+            </div>
+            <img class="recent_img portfolio-image" src="img/wormhole-cover.png" alt="">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item portfolio-block" href="pages/universe-collide.html">
+            <div class="caption">
+              <div class="caption-content">
+                <div class="h2">Universe Collide</div>
+                <p class="mb-0">Battle against your opponents with ships from other franchises.</p>
+              </div>
+            </div>
+            <img class="recent_img portfolio-image" src="img/universal-collide.jpg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+	<!--
+  <section class="content-section bg-primary text-white">
+    <div class="container text-center">
+      <h2 class="mb-4">The buttons below are impossible to resist...</h2>
+      <a href="#!" class="btn btn-xl btn-light mr-4">Click Me!</a>
+      <a href="#!" class="btn btn-xl btn-dark">Look at Me!</a>
+    </div>
+  </section>
+-->
+
+  <!-- Map -->
+	  <!--
+  <div id="contact" class="map">
+    <iframe src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+    <br />
+    <small>
+      <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
+    </small>
+  </div>
+-->
+
+  <!-- Footer -->
+  <footer class="footer text-center footer-background">
+    <div class="container">
+      <ul class="list-inline mb-5">
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="https://www.instagram.com/mr_devlog/">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="https://twitter.com/ChicoteJaiden">
+            <i class="icon-social-twitter"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="https://github.com/jChicote">
+            <i class="icon-social-github"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="https://jaidenchicote.itch.io/">
+            <i class="fab fa-itch-io"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white" href="https://www.linkedin.com/in/jaidenchicote/">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+      </ul>
+      <p class="text-muted small mb-0">Copyright &copy; Jaiden Chicote 2020</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/stylish-portfolio.min.js"></script>
+
+</body>
+
+</html>
