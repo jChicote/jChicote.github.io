@@ -1,0 +1,97 @@
+/* Shared tokens + navigation for the redesigned pages (home, about) */
+
+:root {
+  --site-red: #D8312A;
+  --site-ink: #120F0F;
+  --site-ink-raised: #1C1717;
+  --site-paper: #F5EEE9;
+  --site-display: 'Archivo Black', 'Arial Black', sans-serif;
+  --site-mono: 'Space Mono', 'Courier New', monospace;
+  --site-nav-height: 66px;
+}
+
+/* Navigation: red bar with ink text by default; .site-nav--dark inverts it */
+.site-nav {
+  --nav-bg: var(--site-red);
+  --nav-fg: var(--site-ink);
+  --nav-hover-bg: var(--site-ink);
+  --nav-hover-fg: var(--site-paper);
+  --nav-border: var(--site-ink);
+
+  background-color: var(--nav-bg);
+  padding: .5rem 1rem;
+  border-bottom: 2px solid var(--nav-border);
+}
+
+.site-nav--dark {
+  --nav-bg: var(--site-ink);
+  --nav-fg: var(--site-paper);
+  --nav-hover-bg: var(--site-red);
+  --nav-hover-fg: var(--site-ink);
+  --nav-border: var(--site-red);
+}
+
+.site-nav .container {
+  position: relative;
+}
+
+.site-nav .navbar-brand,
+.site-nav .navbar-brand:hover,
+.site-nav .navbar-brand:focus {
+  font-family: var(--site-display);
+  font-size: 1.35rem;
+  letter-spacing: .02em;
+  color: var(--nav-fg);
+}
+
+.site-nav .nav-link {
+  font-family: var(--site-mono);
+  font-weight: 700;
+  font-size: .85rem;
+  letter-spacing: .08em;
+  color: var(--nav-fg);
+  background-color: transparent;
+  border-radius: 0 !important;
+  transition: color .3s ease, background-color .3s ease;
+}
+
+.site-nav .nav-link:hover,
+.site-nav .nav-link:focus,
+.site-nav .nav-link.active {
+  color: var(--nav-hover-fg);
+  background-color: var(--nav-hover-bg);
+}
+
+.site-nav .navbar-toggler,
+.site-nav button.navbar-toggler:hover,
+.site-nav button.navbar-toggler:focus {
+  background-color: var(--nav-hover-bg) !important;
+  color: var(--nav-hover-fg) !important;
+  border-radius: 0 !important;
+  font-family: var(--site-mono);
+  font-size: .85rem;
+}
+
+@media (min-width: 992px) {
+  /* Centre the links independently of the brand width */
+  .site-nav .navbar-nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 991.98px) {
+  .site-nav .navbar-collapse {
+    padding-top: .5rem;
+  }
+
+  .site-nav .nav-link {
+    padding-left: .75rem !important;
+    padding-right: .75rem !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-nav .nav-link { transition: none; }
+}
