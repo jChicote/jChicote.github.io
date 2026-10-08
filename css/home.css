@@ -142,7 +142,8 @@ body.home {
   color: var(--site-ink);
 }
 
-/* Arcade-style button: hard offset shadow that presses in */
+/* Same selection state as the project cards: lift up-left with a hard
+   shadow (paper here, since red would vanish on the red hero) */
 .btn-start {
   display: inline-flex;
   align-items: stretch;
@@ -154,21 +155,21 @@ body.home {
   font-size: .95rem;
   letter-spacing: .08em;
   text-transform: uppercase;
-  box-shadow: 6px 6px 0 var(--site-paper);
-  transition: transform .08s ease, box-shadow .08s ease;
+  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
 }
 
 .btn-start:hover,
 .btn-start:focus {
   color: var(--site-paper);
   text-decoration: none;
-  transform: translate(3px, 3px);
-  box-shadow: 3px 3px 0 var(--site-paper);
+  border-color: var(--site-paper);
+  transform: translate(-4px, -4px);
+  box-shadow: 8px 8px 0 var(--site-paper);
 }
 
 .btn-start:active {
-  transform: translate(6px, 6px);
-  box-shadow: 0 0 0 var(--site-paper);
+  transform: none;
+  box-shadow: none;
 }
 
 .btn-start:focus-visible {
@@ -220,6 +221,7 @@ body.home {
 @media (prefers-reduced-motion: reduce) {
   .press-start { animation: none; }
   .btn-start { transition: none; }
+  .btn-start:hover, .btn-start:focus { transform: none; }
 }
 
 @media (max-width: 991.98px) {

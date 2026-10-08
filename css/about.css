@@ -74,6 +74,14 @@
   color: var(--site-paper);
 }
 
+/* Button row: same spacing as the project page actions */
+.about-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-top: 2.25rem;
+}
+
 /* Skills as segmented HUD stat bars */
 
 .skills-grid {

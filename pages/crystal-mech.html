@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
+  <meta name="description" content="A rogue-like where you journey through crystalline mines, defeating robots to earn more powerful weapons and abilities the deeper you go.">
   <meta name="author" content="">
 
   <title>Jaiden Chicote - Crystal Mech</title>
@@ -14,232 +15,152 @@
 
   <!-- Custom Fonts -->
   <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
   <link href="../vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
-
-  <!-- Stylish CSS template -->
-  <link href="../css/stylish-portfolio.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 
   <!-- Custom CSS overrides  -->
   <link href="../css/custom.css" rel="stylesheet" type="text/css">
 
-  <!-- Include JQuery -->
-  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+  <!-- Redesign -->
+  <link href="../css/theme.css" rel="stylesheet" type="text/css">
+  <link href="../css/project.css" rel="stylesheet" type="text/css">
 
-  <!-- Transition scripts for the page -->
-  <script type="text/javascript" src="../js/site-transitions.js"></script>
-
-  <!-- Include boostrap js -->
-  <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
 </head>
 
-<body id="page-top" class="body-general-text"  style="background-color: #1A1A1A;">
+<body id="page-top" class="page-dark">
 
 	<!-- Navigation-->
-  <nav class="navbar navbar-expand-lg text-uppercase fixed-top navbar-padding navbar-background" id="mainNav">
+  <nav class="navbar navbar-expand-lg text-uppercase fixed-top site-nav site-nav--dark" id="mainNav">
       <div class="container">
-          <a class="navbar-brand js-scroll-trigger" href="#page-top">Jaiden Chicote</a>
-          <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <a class="navbar-brand" href="../index.html">Jaiden Chicote</a>
+          <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
               Menu
               <i class="fas fa-bars"></i>
           </button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
-              <ul class="navbar-nav ml-auto">
-									<li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="../index.html">Home</a></li>
-                  <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="game-portfolio.html">Game Dev</a></li>
-                  <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="mobile-portfolio.html">Mobile Dev</a></li>
-                  <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="contact.html">Contact</a></li>
+              <ul class="navbar-nav">
+                  <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3" href="../index.html">Home</a></li>
+                  <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3" href="about.html">About</a></li>
+                  <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 active" href="projects.html">Projects</a></li>
+                  <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3" href="contact.html">Contact</a></li>
               </ul>
           </div>
       </div>
   </nav>
 
-  <!-- Page Title and images -->
-  <section class="content-section content-background content-padding skill-background fader" style="background-color: #222121;" id="about">
+  <!-- Project intro -->
+  <section class="page-section page-intro fader">
     <div class="container">
-      <div class="content-section-heading text-center portfolio-padding project-header">
-        <h2 class="header line heading" style="padding-top: 0; padding-bottom: 0.25rem;">CRYSTAL MECH</h2>
-      </div>
-
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-100" src="../img/crystal-mech-cover.JPG" alt="First slide">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Cover Art</h5>
-              <p>Final cover art for the game.</p>
-            </div>
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
+      <a class="project-back" href="projects.html"><i class="fas fa-arrow-left"></i>All projects</a>
+      <p class="page-kicker">// Lvl 08 &middot; 2020</p>
+      <h1 class="page-title">Crystal <span>Mech</span></h1>
+      <p class="page-lede">A rogue-like where you journey through crystalline mines, defeating robots to earn more powerful weapons and abilities the deeper you go.</p>
+      <div class="project-actions">
+        <a class="btn-arcade btn-arcade--primary" href="https://s-t-3-v-3.itch.io/crystal-mech" target="_blank" rel="noopener">
+          <i class="fab fa-itch-io"></i>Play on itch.io
         </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
+        <a class="btn-arcade" href="https://bitbucket.org/GDS1_Group3/project/src/master/Assets/Scripts/" target="_blank" rel="noopener">
+          <i class="fab fa-bitbucket"></i>Code on Bitbucket
         </a>
       </div>
-    </div>
-  </section>
 
-  <!-- Description -->
-  <section class="content-section content-background content-padding skill-background fader" style="background-color: #272727;" id="about">
-    <div class="container">
-      <div class="row">
-        <div class="col" style="padding-bottom: 4vh; text-align: center;">
-          <span class="badge badge-success header-badge">Game Completed</span>
-        </div>
-      </div>
-      <div class="row" style="position: relative;">
-        <div class="col">
-          <h3> Game Description </h3>
-          <p class="body-general-text">
-            Crystal Mech is a game based on rogue-likes developed for the first UTS Game Studio. This project has also participated in the June
-            2020 showcase. From journeying through the deepest caverns. You play in traversing through the crystaline mines taking down enemies
-            as you go. You defeat robots as you go you can earn weapons with greater power and earn increased abilities the deeper you traverse.
-            However you'd want to keep yourself on your toes as your robotic enemies become much more stronger as you become strong.
-          </p>
-          <div class="button-container button-col-alignment" style="padding-top: 1vh;">
-            <a href="https://s-t-3-v-3.itch.io/crystal-mech" target="_blank" class="btn btn-primary btn-lg btn-block button-align button-style" style="background-color: #D05252!important; margin-bottom: .5rem;">
-              <i class="fab fa-itch-io" style="padding-right: 1rem;"></i>Play in Itch.io
-            </a>
-            <a href="https://bitbucket.org/GDS1_Group3/project/src/master/Assets/Scripts/" target="_blank" class="btn btn-primary btn-lg btn-block button-align button-style" style="background-color: #0074FF!important; margin-bottom: .5rem;">
-              <i class="fab fa-bitbucket" style="padding-right: 1rem;"></i>See code in Bitbucket
-            </a>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <img src="../img/crystal-mech/in-game-scene.png" class="img-fluid image-fit shadow" alt="Responsive image">
+      <div class="project-grid">
+        <figure class="project-cover">
+          <span class="hud-corner tl"></span>
+          <span class="hud-corner tr"></span>
+          <span class="hud-corner bl"></span>
+          <span class="hud-corner br"></span>
+          <img src="../img/crystal-mech-cover.JPG" alt="Crystal Mech cover art">
+        </figure>
+        <div class="project-info">
+          <h2>Level info</h2>
+          <dl class="info-list">
+            <div class="info-row"><dt>Year</dt><dd>2020</dd></div>
+            <div class="info-row"><dt>Made for</dt><dd>UTS Game Studio 1</dd></div>
+            <div class="info-row"><dt>Event</dt><dd>June 2020 showcase</dd></div>
+            <div class="info-row"><dt>My role</dt><dd>Programming and art</dd></div>
+            <div class="info-row"><dt>Made with</dt><dd>Unity (HDRP), Blender, Audacity</dd></div>
+            <div class="info-row"><dt>Status</dt><dd>Completed</dd></div>
+          </dl>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="content-section content-background content-padding skill-background fader" style="background-color: #222121;" id="about">
+  <!-- Details -->
+  <section class="page-section page-section--raised">
     <div class="container">
-      <div class="row row-padding" style="position: relative;">
-        <div class="col">
-          <h3> Project Purpose </h3>
-          <p> The purpose of this project is to develop a high-level project using the skills learnt from the subject. The Game Studio 1 subject
-              taught a lot of important theoretical skills in games development and in software development. Throughout the duration of the entire
-              games development course, the Agile/SCRUM methodology has been partly used to address the overall cycle and project management.
-              This course explores through the different specific step by step areas in using SCRUM in our software/games development. Besides the
-              overall premise of the game's result, the overall purpose was in experiencing the use of industry methods in project managemet
-              and experiencing the benefits and challenges in following a process in software development.</p>
-          <h5> Objective </h5>
-          <p> The objective of this project is to create a fully functioning game that achieves the intended design defined during project planning.
-              sprints or milestones.</p>
-          <h5> Approach </h5>
-          <p> When developing the game, our group has undertaken the extensive use of the SCUM methodology in managing our game development. Firstly
-              we spent the early period ind eveloping plans and creating a design document and pitch that presents the overall idea and design of
-              the game. From there undergoes a series of fortnightly sprints and multiple meetings in-between where relevant communications are held in
-              discussing concerns, tasks/user stories and progress of assigned sprints. After a few periods of sprints deliverables are then finalised
-              and a reflection following the Recount-React-Analyse pattern are completed</p>
+      <div class="project-columns">
+        <div>
+        <div class="project-block">
+          <h2>About</h2>
+          <p class="page-lede">Crystal Mech is a game based on rogue-likes developed for the first UTS Game Studio. This project has also participated in the June 2020 showcase. Journeying through the deepest caverns, you traverse the crystalline mines taking down enemies as you go. As you defeat robots you can earn weapons with greater power and increased abilities the deeper you traverse. However you'd want to keep yourself on your toes as your robotic enemies become much stronger as you become strong.</p>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="content-section content-background content-padding skill-background fader" style="background-color: #272727;" id="about">
-    <div class="container">
-      <div class="row row-padding" style="position: relative;">
-        <div class="col-md-6">
-          <img src="../img/crystal-mech/in-game-gameplay.png" class="img-fluid image-fit shadow" alt="Responsive image">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>In-Game Shot</h5>
-            <p>The final visual depiction of work.</p>
-          </div>
+        <div class="project-block">
+          <h2>Project purpose</h2>
+          <p class="page-lede">The purpose of this project is to develop a high-level project using the skills learnt from the subject. The Game Studio 1 subject taught a lot of important theoretical skills in games development and in software development. Throughout the duration of the entire games development course, the Agile/SCRUM methodology has been partly used to address the overall cycle and project management. This course explores the different specific step by step areas in using SCRUM in our software/games development. Besides the overall premise of the game's result, the overall purpose was in experiencing the use of industry methods in project management and experiencing the benefits and challenges in following a process in software development.</p>
+          <h3>Objective</h3>
+          <p class="page-lede">The objective of this project is to create a fully functioning game that achieves the intended design defined during project planning, sprints or milestones.</p>
+          <h3>Approach</h3>
+          <p class="page-lede">When developing the game, our group has undertaken the extensive use of the SCRUM methodology in managing our game development. Firstly we spent the early period in developing plans and creating a design document and pitch that presents the overall idea and design of the game. From there the project underwent a series of fortnightly sprints and multiple meetings in-between where relevant communications are held in discussing concerns, tasks/user stories and progress of assigned sprints. After a few periods of sprints deliverables are then finalised and a reflection following the Recount-React-Analyse pattern is completed.</p>
         </div>
-        <div class="col-md-6">
-          <h3> My Role </h3>
-          <p> Throughout development, each individual has understanding multiple roles in development to both share the load and interface experiences
-              of each member within that area. However for the most part, I've have heavily worked in both programming and artistic elements within
-              development. This often involved developing multiple components for primarily the enemies and weapons. Additionally this has opened the
-              oppurtunity in developing under the SOLID principles when both discussing and learning with other members of the group. Secondly, I've worked
-              on some art that was created for both conveying designs of the game and for the cover art of the project. However my role in artistic
-              elements extended over how the artistic design decided will be represented over the visual language and design of the game.</p>
         </div>
-      </div>
-
-      <div class="row row-padding" style="position: relative;">
-        <div class="col-md-6" style="padding-bottom: 2vh;">
-          <h3> Personal Contributions </h3>
-          <ul>
+        <div>
+        <div class="project-block">
+          <h2>My role</h2>
+          <p class="page-lede">Throughout development, each individual has undertaken multiple roles in development to both share the load and interface experiences of each member within that area. However for the most part, I've heavily worked in both programming and artistic elements within development. This often involved developing multiple components for primarily the enemies and weapons. Additionally this has opened the opportunity in developing under the SOLID principles when both discussing and learning with other members of the group.</p>
+          <p class="page-lede">Secondly, I've worked on some art that was created for both conveying designs of the game and for the cover art of the project. However my role in artistic elements extended over how the artistic design decided will be represented over the visual language and design of the game.</p>
+        </div>
+        <div class="project-block">
+          <h2>Personal contributions</h2>
+          <ul class="project-bullets">
             <li>Work on preliminary setup of player systems.</li>
-            <li>Development of improvements on present weapon systems including targetting systems and base weapon classes.</li>
+            <li>Development of improvements on present weapon systems including targeting systems and base weapon classes.</li>
             <li>Post processing work on Unity's high definition render pipeline.</li>
             <li>Weapon and experience particle systems.</li>
             <li>Custom shadergraph shaders for HDRP unlit particles.</li>
             <li>Modified kitbashed audio files for sound effects done through Audacity.</li>
             <li>Custom crystal assets created through procedurally generated displacements in Blender.</li>
             <li>Fine tuned lighting settings and added light probes.</li>
-            <li>Digital art created for both the cover art and the initial concept illustration.
+            <li>Digital art created for both the cover art and the initial concept illustration.</li>
           </ul>
         </div>
-        <div class="col-md-6">
-          <img src="../img/crystal-mech/crystal-mech-shot-2.png" class="img-fluid image-fit shadow" alt="Responsive image">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Concept Illustration</h5>
-            <p>Combined photobash and painted depection of gameplay.</p>
-          </div>
         </div>
       </div>
     </div>
+  </section>
 
+  <!-- Gallery -->
+  <section class="page-section ">
+    <div class="container">
+      <p class="page-kicker">// Media</p>
+      <h2 class="page-title page-title--section">Gallery</h2>
+      <div class="shot-grid">
+        <figure><a href="../img/crystal-mech/In-game-scene.png" target="_blank" rel="noopener"><img src="../img/crystal-mech/In-game-scene.png" alt="In-game scene" loading="lazy"></a><figcaption><strong>In-game scene</strong></figcaption></figure>
+        <figure><a href="../img/crystal-mech/in-game-gameplay.png" target="_blank" rel="noopener"><img src="../img/crystal-mech/in-game-gameplay.png" alt="In-game shot" loading="lazy"></a><figcaption><strong>In-game shot</strong>The final visual depiction of work.</figcaption></figure>
+        <figure><a href="../img/crystal-mech/crystal-mech-shot-2.png" target="_blank" rel="noopener"><img src="../img/crystal-mech/crystal-mech-shot-2.png" alt="Concept illustration" loading="lazy"></a><figcaption><strong>Concept illustration</strong>Combined photobash and painted depiction of gameplay.</figcaption></figure>
+      </div>
+    </div>
   </section>
 
   <!-- Footer -->
-  <footer class="footer text-center footer-background">
+  <footer class="site-footer">
     <div class="container">
-      <ul class="list-inline mb-5">
-        <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white mr-3" href="https://www.instagram.com/mr_devlog/">
-            <i class="fab fa-instagram"></i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white mr-3" href="https://twitter.com/ChicoteJaiden">
-            <i class="icon-social-twitter"></i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white mr-3" href="https://github.com/jChicote">
-            <i class="icon-social-github"></i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white mr-3" href="https://jaidenchicote.itch.io/">
-            <i class="fab fa-itch-io"></i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white" href="https://www.linkedin.com/in/jaidenchicote/">
-            <i class="fab fa-linkedin"></i>
-          </a>
-        </li>
+      <ul class="site-social">
+        <li><a href="https://www.instagram.com/mr_devlog/" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://twitter.com/ChicoteJaiden" aria-label="Twitter"><i class="icon-social-twitter"></i></a></li>
+        <li><a href="https://github.com/jChicote" aria-label="GitHub"><i class="icon-social-github"></i></a></li>
+        <li><a href="https://jaidenchicote.itch.io/" aria-label="Itch.io"><i class="fab fa-itch-io"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/jaidenchicote/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
       </ul>
-      <p class="text-muted small mb-0">Copyright &copy; Jaiden Chicote 2020</p>
+      <small>Copyright &copy; Jaiden Chicote 2020</small>
     </div>
   </footer>
-
-  <!-- Scroll to Top Button-->
-  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
-    <i class="fas fa-angle-up"></i>
-  </a>
 
   <!-- Bootstrap core JavaScript -->
   <script src="../vendor/jquery/jquery.min.js"></script>
   <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="../js/stylish-portfolio.min.js"></script>
+  <script src="../js/image-viewer.js"></script>
 
 </body>
 

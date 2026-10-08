@@ -172,6 +172,59 @@
   color: var(--site-red);
 }
 
+.project-block h3 {
+  margin: 1.75rem 0 .5rem;
+  font-family: var(--site-mono);
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--site-red);
+}
+
+/* Bullet lists with square red markers */
+.project-bullets {
+  margin: 0 0 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.project-bullets li {
+  position: relative;
+  padding: .55rem 0 .55rem 1.5rem;
+  border-bottom: 1px solid rgba(245, 238, 233, .1);
+  font-family: CircularStd-Book, sans-serif;
+  font-size: .95rem;
+  line-height: 1.55;
+  color: rgba(245, 238, 233, .85);
+}
+
+.project-bullets li::before {
+  content: "";
+  position: absolute;
+  top: 1.05rem;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background-color: var(--site-red);
+}
+
+/* Trailer */
+.project-video {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  border: 3px solid var(--site-paper);
+  box-shadow: 8px 8px 0 var(--site-red);
+}
+
+.project-video iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 /* Screenshot gallery */
 .shot-grid {
   display: grid;
@@ -190,6 +243,26 @@
   border-color: var(--site-red);
   transform: translate(-4px, -4px);
   box-shadow: 8px 8px 0 var(--site-red);
+}
+
+.shot-grid figure {
+  margin: 0;
+}
+
+.shot-grid figcaption {
+  margin-top: .75rem;
+  font-family: var(--site-mono);
+  font-size: .75rem;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: rgba(245, 238, 233, .65);
+}
+
+.shot-grid figcaption strong {
+  display: block;
+  color: var(--site-paper);
 }
 
 .shot-grid img {
