@@ -1,0 +1,226 @@
+/* Individual project page — shared dark-page shell lives in theme.css */
+
+.project-back {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  margin-bottom: 2rem;
+  font-family: var(--site-mono);
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: rgba(245, 238, 233, .7);
+  transition: color .3s ease;
+}
+
+.project-back:hover,
+.project-back:focus {
+  color: var(--site-red);
+  text-decoration: none;
+}
+
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin: 2rem 0 3.5rem;
+}
+
+/* Cover + level info */
+.project-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+  gap: 3rem;
+  align-items: start;
+}
+
+.project-cover {
+  position: relative;
+  margin: 0;
+}
+
+.project-cover img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border: 3px solid var(--site-paper);
+}
+
+.project-cover .hud-corner {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border: 0 solid var(--site-red);
+}
+
+.project-cover .hud-corner.tl { top: -12px; left: -12px; border-top-width: 4px; border-left-width: 4px; }
+.project-cover .hud-corner.tr { top: -12px; right: -12px; border-top-width: 4px; border-right-width: 4px; }
+.project-cover .hud-corner.bl { bottom: -12px; left: -12px; border-bottom-width: 4px; border-left-width: 4px; }
+.project-cover .hud-corner.br { bottom: -12px; right: -12px; border-bottom-width: 4px; border-right-width: 4px; }
+
+.project-info h2,
+.project-block h2 {
+  margin: 0 0 1.25rem;
+  padding-bottom: .75rem;
+  border-bottom: 2px solid rgba(245, 238, 233, .15);
+  font-family: var(--site-display);
+  font-size: 1.35rem;
+  text-transform: uppercase;
+  color: var(--site-paper);
+}
+
+.info-list {
+  margin: 0;
+}
+
+.info-row {
+  display: grid;
+  grid-template-columns: 8rem minmax(0, 1fr);
+  gap: 1rem;
+  padding: .6rem 0;
+  border-bottom: 1px solid rgba(245, 238, 233, .1);
+}
+
+.info-row dt {
+  font-family: var(--site-mono);
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--site-red);
+}
+
+.info-row dd {
+  margin: 0;
+  font-family: CircularStd-Book, sans-serif;
+  font-size: .95rem;
+  color: var(--site-paper);
+}
+
+/* Description, controls, credits */
+.project-columns {
+  display: grid;
+  grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+  gap: 3rem;
+}
+
+.project-block + .project-block {
+  margin-top: 3rem;
+}
+
+.project-block .page-lede {
+  margin-bottom: 1rem;
+}
+
+.project-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.project-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: .55rem 0;
+  border-bottom: 1px solid rgba(245, 238, 233, .1);
+  font-family: CircularStd-Book, sans-serif;
+  font-size: .95rem;
+  color: rgba(245, 238, 233, .85);
+}
+
+.project-list li span:last-child:not(:first-child) {
+  font-family: var(--site-mono);
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-align: right;
+  text-transform: uppercase;
+  color: rgba(245, 238, 233, .6);
+}
+
+.project-list a {
+  color: var(--site-paper);
+  text-decoration: underline;
+  text-decoration-color: var(--site-red);
+  text-underline-offset: 3px;
+}
+
+.project-list a:hover {
+  color: var(--site-red);
+}
+
+.project-list li.is-me span:first-child {
+  color: var(--site-red);
+}
+
+.project-list--features li {
+  padding: .9rem 0;
+  line-height: 1.55;
+}
+
+.project-list--features strong {
+  display: inline-block;
+  margin-bottom: .25rem;
+  font-family: var(--site-mono);
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--site-red);
+}
+
+/* Screenshot gallery */
+.shot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.shot-grid a {
+  display: block;
+  border: 2px solid rgba(245, 238, 233, .15);
+  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+}
+
+.shot-grid a:hover,
+.shot-grid a:focus {
+  border-color: var(--site-red);
+  transform: translate(-4px, -4px);
+  box-shadow: 8px 8px 0 var(--site-red);
+}
+
+.shot-grid img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-back,
+  .shot-grid a {
+    transition: none;
+  }
+
+  .shot-grid a:hover,
+  .shot-grid a:focus {
+    transform: none;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .project-grid,
+  .project-columns {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 420px) {
+  .info-row {
+    grid-template-columns: 1fr;
+    gap: .25rem;
+  }
+}

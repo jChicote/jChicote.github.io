@@ -137,6 +137,22 @@
   text-transform: uppercase;
 }
 
+.level-card-chips {
+  margin: -.25rem 0 .75rem;
+}
+
+.level-card-chip {
+  display: inline-block;
+  padding: .1rem .45rem;
+  border: 1px solid rgba(245, 238, 233, .35);
+  font-family: var(--site-mono);
+  font-size: .65rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: rgba(245, 238, 233, .7);
+}
+
 .level-card-text {
   flex: 1;
   margin: 0 0 1.25rem;

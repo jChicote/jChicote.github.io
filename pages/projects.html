@@ -61,10 +61,59 @@
         <button type="button" class="btn-arcade" data-filter="mobile" aria-pressed="false">Mobile</button>
         <button type="button" class="btn-arcade" data-filter="tools" aria-pressed="false">Tools</button>
         <button type="button" class="btn-arcade" data-filter="web" aria-pressed="false">Web</button>
-        <p class="world-count" aria-live="polite"><span id="project-count">09</span> Levels</p>
+        <p class="world-count" aria-live="polite"><span id="project-count">13</span> Levels</p>
       </div>
 
       <div class="level-grid" id="project-grid">
+        <a class="level-card" data-category="tools" href="aplos-console.html">
+          <div class="level-card-media">
+            <img src="../img/aplos-console/cover.jpg" alt="" loading="lazy">
+            <span class="level-card-tag" title="Unity"><i class="fab fa-unity" aria-hidden="true"></i><span class="sr-only">Unity</span></span>
+          </div>
+          <div class="level-card-body">
+            <p class="level-card-meta"><span class="level-card-num">Lvl 13</span><span class="level-card-year">2025&ndash;2026</span></p>
+            <h3 class="level-card-title">Aplos Console</h3>
+            <p class="level-card-chips"><span class="level-card-chip">AI-Assisted Coding</span></p>
+            <p class="level-card-text">A drop-in Unity overlay for running commands, tweaking settings live and watching logs without leaving play mode.</p>
+            <span class="level-card-cta">Check it out <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+        <a class="level-card" data-category="games" href="judicium-drift.html">
+          <div class="level-card-media">
+            <img src="../img/judicium-drift/cover.png" alt="" loading="lazy">
+            <span class="level-card-tag" title="Unity"><i class="fab fa-unity" aria-hidden="true"></i><span class="sr-only">Unity</span></span>
+          </div>
+          <div class="level-card-body">
+            <p class="level-card-meta"><span class="level-card-num">Lvl 12</span><span class="level-card-year">2025</span></p>
+            <h3 class="level-card-title">Judicium Drift</h3>
+            <p class="level-card-text">A chariot-duel courtroom: drift to leave trails, close loops and out-drive the prosecution. Made for GMTK Game Jam 2025.</p>
+            <span class="level-card-cta">Check it out <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+        <a class="level-card" data-category="web" href="solar-system-visualizer.html">
+          <div class="level-card-media">
+            <img src="../img/solar-system-visualizer/cover.jpg" alt="" loading="lazy">
+            <span class="level-card-tag" title="React"><i class="fab fa-react" aria-hidden="true"></i><span class="sr-only">React</span></span>
+          </div>
+          <div class="level-card-body">
+            <p class="level-card-meta"><span class="level-card-num">Lvl 11</span><span class="level-card-year">2023&ndash;2024</span></p>
+            <h3 class="level-card-title">Solar System Visualizer</h3>
+            <p class="level-card-text">An interactive 3D view of the Sun, planets, Atira-class asteroids and Halley-class comets, built with Three.js and React.</p>
+            <span class="level-card-cta">Check it out <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
+        <a class="level-card" data-category="games" href="coffee-jitters.html">
+          <div class="level-card-media">
+            <img src="../img/coffee-jitters/cover.gif" alt="" loading="lazy">
+            <span class="level-card-tag" title="Unity"><i class="fab fa-unity" aria-hidden="true"></i><span class="sr-only">Unity</span></span>
+          </div>
+          <div class="level-card-body">
+            <p class="level-card-meta"><span class="level-card-num">Lvl 10</span><span class="level-card-year">2023</span></p>
+            <h3 class="level-card-title">Coffee Jitters</h3>
+            <p class="level-card-text">A café game where you're the customer: type out ever more complicated coffee orders before the barista loses patience. Made for GMTK Game Jam 2023.</p>
+            <span class="level-card-cta">Check it out <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </a>
         <a class="level-card" data-category="games" href="that-one-samurai-game.html">
           <div class="level-card-media">
             <img src="../img/TOSG_Thumbnail.png" alt="" loading="lazy">
@@ -292,8 +341,13 @@
       });
 
       // Allow links such as projects.html#mobile to open pre-filtered
-      var initial = location.hash.slice(1);
-      if (document.querySelector('[data-filter="' + initial + '"]')) applyFilter(initial);
+      function applyHash() {
+        var hash = location.hash.slice(1);
+        applyFilter(document.querySelector('[data-filter="' + hash + '"]') ? hash : 'all');
+      }
+
+      window.addEventListener('hashchange', applyHash);
+      applyHash();
     })();
   </script>
 
