@@ -1,0 +1,213 @@
+/* Projects page — shared dark-page shell lives in theme.css */
+
+/* Filter buttons + level count */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.25rem;
+  margin: 3rem 0 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid rgba(245, 238, 233, .15);
+}
+
+.filter-bar .btn-arcade {
+  cursor: pointer;
+}
+
+.filter-bar .world-count {
+  margin-left: auto;
+}
+
+.world-count {
+  margin: 0;
+  font-family: var(--site-mono);
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: rgba(245, 238, 233, .6);
+}
+
+/* Level-select card grid */
+.level-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.level-card {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgba(245, 238, 233, .15);
+  background-color: var(--site-ink-raised);
+  color: var(--site-paper);
+  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+}
+
+.level-card[hidden] {
+  display: none;
+}
+
+.level-card:hover,
+.level-card:focus {
+  color: var(--site-paper);
+  text-decoration: none;
+  border-color: var(--site-red);
+  transform: translate(-4px, -4px);
+  box-shadow: 8px 8px 0 var(--site-red);
+}
+
+.level-card:focus-visible {
+  outline: 3px solid var(--site-paper);
+  outline-offset: 4px;
+}
+
+.level-card-media {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 10;
+  border-bottom: 2px solid rgba(245, 238, 233, .15);
+}
+
+.level-card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(.55) brightness(.85);
+  transition: filter .3s ease, transform .3s ease;
+}
+
+.level-card:hover .level-card-media img,
+.level-card:focus .level-card-media img {
+  filter: none;
+  transform: scale(1.04);
+}
+
+.level-card-tag {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: var(--site-red);
+  color: var(--site-ink);
+  font-size: 1.25rem;
+}
+
+.level-card-tag svg {
+  width: 22px;
+  height: 22px;
+}
+
+.level-card-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 1.25rem 1.25rem 1.5rem;
+}
+
+.level-card-meta {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 .5rem;
+  font-family: var(--site-mono);
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.level-card-num {
+  color: var(--site-red);
+}
+
+.level-card-year {
+  color: rgba(245, 238, 233, .6);
+}
+
+.level-card-title {
+  margin: 0 0 .75rem;
+  font-family: var(--site-display);
+  font-size: 1.35rem;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.level-card-text {
+  flex: 1;
+  margin: 0 0 1.25rem;
+  font-family: CircularStd-Book, sans-serif;
+  font-size: .95rem;
+  line-height: 1.55;
+  color: rgba(245, 238, 233, .75);
+}
+
+.level-card-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: .6rem;
+  font-family: var(--site-mono);
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.level-card-cta i {
+  color: var(--site-red);
+  transition: transform .15s ease;
+}
+
+.level-card:hover .level-card-cta i,
+.level-card:focus .level-card-cta i {
+  transform: translateX(4px);
+}
+
+.level-empty {
+  margin: 0;
+  padding: 3rem 0;
+  font-family: var(--site-mono);
+  font-size: .9rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: rgba(245, 238, 233, .6);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .level-card,
+  .level-card-media img,
+  .level-card-cta i {
+    transition: none;
+  }
+
+  .level-card:hover,
+  .level-card:focus {
+    transform: none;
+  }
+
+  .level-card:hover .level-card-media img,
+  .level-card:focus .level-card-media img {
+    transform: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .filter-bar {
+    gap: .9rem;
+  }
+
+  .filter-bar .btn-arcade {
+    padding: .6rem .9rem;
+    font-size: .8rem;
+  }
+
+  .filter-bar .world-count {
+    width: 100%;
+    margin-left: 0;
+  }
+}

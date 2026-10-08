@@ -95,3 +95,180 @@
 @media (prefers-reduced-motion: reduce) {
   .site-nav .nav-link { transition: none; }
 }
+
+/* ---------------------------------------------------------------
+   Dark inner pages (about, game projects): ink ground, paper text,
+   red used only as a highlight — the inverse of the landing page.
+   --------------------------------------------------------------- */
+
+body.page-dark {
+  background-color: var(--site-ink);
+  color: var(--site-paper);
+}
+
+.page-section {
+  position: relative;
+  padding: 5rem 0;
+}
+
+/* Faint CRT scanlines, as on the landing page */
+.page-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(0deg, rgba(255, 255, 255, .025) 0, rgba(255, 255, 255, .025) 1px, transparent 1px, transparent 4px);
+  pointer-events: none;
+}
+
+.page-section .container {
+  position: relative;
+}
+
+.page-intro {
+  padding-top: calc(var(--site-nav-height) + 4rem);
+}
+
+.page-section--raised {
+  background-color: var(--site-ink-raised);
+  border-top: 2px solid var(--site-red);
+}
+
+.page-kicker {
+  margin: 0 0 1rem;
+  font-family: var(--site-mono);
+  font-size: .8rem;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--site-red);
+}
+
+.page-title {
+  margin: 0 0 2rem;
+  font-family: var(--site-display);
+  font-size: clamp(2.75rem, 7vw, 6rem);
+  line-height: .9;
+  text-transform: uppercase;
+  color: var(--site-paper);
+}
+
+.page-title span {
+  color: var(--site-red);
+}
+
+.page-title--section {
+  margin-bottom: 3rem;
+  font-size: clamp(2rem, 4.5vw, 3.5rem);
+}
+
+.page-lede {
+  max-width: 38rem;
+  font-family: CircularStd-Book, sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: rgba(245, 238, 233, .85);
+}
+
+/* Buttons: same arcade press as the landing page, colours inverted */
+.btn-arcade {
+  display: inline-flex;
+  align-items: center;
+  gap: .75rem;
+  padding: .8rem 1.25rem;
+  border: 3px solid var(--site-paper);
+  background-color: var(--site-ink);
+  color: var(--site-paper);
+  font-family: var(--site-mono);
+  font-weight: 700;
+  font-size: .9rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  box-shadow: 6px 6px 0 var(--site-red);
+  transition: transform .08s ease, box-shadow .08s ease;
+}
+
+.btn-arcade:hover,
+.btn-arcade:focus {
+  color: var(--site-paper);
+  text-decoration: none;
+  transform: translate(3px, 3px);
+  box-shadow: 3px 3px 0 var(--site-red);
+}
+
+.btn-arcade:active {
+  transform: translate(6px, 6px);
+  box-shadow: 0 0 0 var(--site-red);
+}
+
+.btn-arcade:focus-visible {
+  outline: 3px solid var(--site-red);
+  outline-offset: 4px;
+}
+
+.btn-arcade--primary,
+.btn-arcade--primary:hover,
+.btn-arcade--primary:focus {
+  border-color: var(--site-red);
+  background-color: var(--site-red);
+  color: var(--site-ink);
+  box-shadow: 6px 6px 0 var(--site-paper);
+}
+
+.btn-arcade--primary:hover,
+.btn-arcade--primary:focus {
+  box-shadow: 3px 3px 0 var(--site-paper);
+}
+
+.btn-arcade--primary:active {
+  box-shadow: 0 0 0 var(--site-paper);
+}
+
+/* Footer */
+.site-footer {
+  padding: 3rem 0;
+  border-top: 2px solid var(--site-red);
+  background-color: var(--site-ink);
+  text-align: center;
+}
+
+.site-social {
+  display: flex;
+  justify-content: center;
+  gap: .75rem;
+  margin: 0 0 1.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+.site-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 2px solid var(--site-paper);
+  color: var(--site-paper);
+  font-size: 1.1rem;
+  transition: color .3s ease, background-color .3s ease, border-color .3s ease;
+}
+
+.site-social a:hover,
+.site-social a:focus {
+  border-color: var(--site-red);
+  background-color: var(--site-red);
+  color: var(--site-ink);
+  text-decoration: none;
+}
+
+.site-footer small {
+  font-family: var(--site-mono);
+  font-size: .75rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: rgba(245, 238, 233, .5);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-arcade, .site-social a { transition: none; }
+}

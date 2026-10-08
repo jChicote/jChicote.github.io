@@ -1,0 +1,122 @@
+/* Contact page — shared dark-page shell lives in theme.css */
+
+/* Short page: keep the footer pinned to the bottom of the screen */
+body.contact-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.contact-main {
+  flex: 1;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 6fr) minmax(0, 5fr);
+  gap: 4rem;
+  align-items: start;
+}
+
+.contact-grid .page-lede {
+  margin-bottom: 2.25rem;
+}
+
+/* Other channels, styled like a game menu with a selection cursor */
+.channel-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 2px solid rgba(245, 238, 233, .15);
+}
+
+.channel-list li {
+  border-bottom: 2px solid rgba(245, 238, 233, .15);
+}
+
+.channel {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem .75rem;
+  color: var(--site-paper);
+  transition: background-color .3s ease, color .3s ease;
+}
+
+.channel:hover,
+.channel:focus {
+  background-color: var(--site-red);
+  color: var(--site-ink);
+  text-decoration: none;
+}
+
+.channel:focus-visible {
+  outline: 3px solid var(--site-paper);
+  outline-offset: 2px;
+}
+
+.channel-cursor {
+  width: 1rem;
+  font-size: .8rem;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+
+.channel:hover .channel-cursor,
+.channel:focus .channel-cursor {
+  opacity: 1;
+}
+
+.channel-icon {
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid currentColor;
+  font-size: 1.05rem;
+}
+
+.channel-name {
+  font-family: var(--site-display);
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+.channel-handle {
+  margin-left: auto;
+  font-family: var(--site-mono);
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  color: var(--site-red);
+  transition: color .3s ease;
+}
+
+.channel:hover .channel-handle,
+.channel:focus .channel-handle {
+  color: var(--site-ink);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .channel,
+  .channel-cursor,
+  .channel-handle {
+    transition: none;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .channel-cursor,
+  .channel-handle {
+    display: none;
+  }
+}
